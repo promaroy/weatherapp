@@ -26,7 +26,8 @@ def home(request):
             #'icon' : city_weather['weather'][0]['icon']
 
         }
-        weather_data.append(weather)
+        #weather_data.append(weather)
+        weather_data.insert(0,weather)#to show the last insert on the top
 
     context = {'weather_data' : weather_data, 'form' : form}
 
@@ -36,7 +37,7 @@ def home(request):
 
 
 
-    
+
 
 
 
